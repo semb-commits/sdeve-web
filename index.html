@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sdeve - Portfolio</title>
+<title>Sdeve - Portofolio</title>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
@@ -18,113 +18,113 @@
     border-bottom:1px solid #222;
     padding:15px 20px
   }
- .nav-container{
+.nav-container{
     max-width:1100px;margin:auto;
     display:flex;justify-content:space-between;align-items:center
   }
- .nav-logo{
+.nav-logo{
     font-weight:700;font-size:1.3rem;
     background:linear-gradient(90deg,#7c3aed,#06b6d4);
     -webkit-background-clip:text;-webkit-text-fill-color:transparent
   }
- .nav-links{display:flex;gap:25px}
- .nav-links a{
+.nav-links{display:flex;gap:25px}
+.nav-links a{
     color:#aaa;text-decoration:none;font-size:0.95rem;
     transition:0.2s
   }
- .nav-links a:hover{color:#06b6d4}
+.nav-links a:hover{color:#06b6d4}
 
- .container{max-width:1100px;margin:auto;padding:40px 20px}
+.container{max-width:1100px;margin:auto;padding:40px 20px}
 
- .hero{
+.hero{
     text-align:center;padding:100px 20px 120px;
     min-height:85vh;display:flex;flex-direction:column;
     justify-content:center;align-items:center
   }
- .hero h1{font-size:3.5rem;background:linear-gradient(90deg,#7c3aed,#06b6d4);
+.hero h1{font-size:3.5rem;background:linear-gradient(90deg,#7c3aed,#06b6d4);
     -webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:15px}
- .hero p{color:#aaa;margin:10px 0 25px;font-size:1.1rem}
+.hero p{color:#aaa;margin:10px 0 25px;font-size:1.1rem}
 
- .typed-text{font-size:1.6rem;color:#06b6d4;margin:15px 0 30px;height:40px}
+.typed-text{font-size:1.6rem;color:#06b6d4;margin:15px 0 30px;height:40px}
 
- .btn{display:inline-block;padding:14px 32px;
+.btn{display:inline-block;padding:14px 32px;
     background:linear-gradient(90deg,#7c3aed,#06b6d4);
     border-radius:12px;color:#fff;text-decoration:none;font-weight:600;
     transition:0.3s;margin:5px;border:none;cursor:pointer}
- .btn:hover{transform:scale(1.05);box-shadow:0 0 20px #7c3aed}
+.btn:hover{transform:scale(1.05);box-shadow:0 0 20px #7c3aed}
 
- .btn-small{
+.btn-small{
     display:inline-block;padding:8px 16px;
     background:#7c3aed;border-radius:8px;
     color:#fff;text-decoration:none;font-size:0.88rem;
     margin:8px 5px 0 0;transition:0.2s;border:none;cursor:pointer
   }
- .btn-small:hover{background:#06b6d4;transform:translateY(-2px)}
+.btn-small:hover{background:#06b6d4;transform:translateY(-2px)}
 
- .card{background:#15151d;border:1px solid #222;padding:22px;
+.card{background:#15151d;border:1px solid #222;padding:22px;
     border-radius:16px;margin:16px 0;transition:0.3s}
- .card:hover{border-color:#7c3aed;box-shadow:0 0 15px rgba(124,58,237,0.3)}
- .card h3,.card h4{margin-bottom:10px;color:#a78bfa;font-size:1.15rem}
- .card p{color:#bbb;line-height:1.6;font-size:0.95rem}
+.card:hover{border-color:#7c3aed;box-shadow:0 0 15px rgba(124,58,237,0.3)}
+.card h3,.card h4{margin-bottom:10px;color:#a78bfa;font-size:1.15rem}
+.card p{color:#bbb;line-height:1.6;font-size:0.95rem}
 
   h2{margin:70px 0 25px;font-size:2.2rem;background:linear-gradient(90deg,#7c3aed,#06b6d4);
     -webkit-background-clip:text;-webkit-text-fill-color:transparent;display:flex;align-items:center}
 
- .porto-grid{
+.porto-grid{
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:30px;margin-top:25px
   }
- .porto-col h3{
+.porto-col h3{
     margin-bottom:18px;color:#06b6d4;font-size:1.35rem
   }
 
- .tag{display:inline-block;background:#1e1e2a;padding:6px 12px;border-radius:20px;
+.tag{display:inline-block;background:#1e1e2a;padding:6px 12px;border-radius:20px;
     font-size:0.85rem;margin:4px;color:#a78bfa}
 
- .contact-card{text-align:center;padding:30px 20px}
- .contact-icons{
+.contact-card{text-align:center;padding:30px 20px}
+.contact-icons{
     display:flex;justify-content:center;gap:32px;flex-wrap:wrap
   }
- .contact-icons a{
+.contact-icons a{
     color:#aaa;font-size:2.2rem;transition:0.3s;display:inline-block
   }
- .contact-icons a:hover{
+.contact-icons a:hover{
     color:#06b6d4;transform:translateY(-5px) scale(1.1)
   }
 
- .tts-btn{
+.tts-btn{
     background:none;border:none;color:#06b6d4;
     font-size:1.2rem;cursor:pointer;margin-left:12px;
     transition:0.2s
   }
- .tts-btn:hover{color:#7c3aed;transform:scale(1.1)}
- .tts-btn.playing{color:#7c3aed;animation:pulse 1s infinite}
+.tts-btn:hover{color:#7c3aed;transform:scale(1.1)}
+.tts-btn.playing{color:#7c3aed;animation:pulse 1s infinite}
 
   @keyframes pulse{
     0%,100%{opacity:1}
     50%{opacity:0.5}
   }
 
- .floating{position:fixed;bottom:20px;right:20px;z-index:100}
- .floating a{background:#25D366;color:#fff;width:55px;height:55px;
+.floating{position:fixed;bottom:20px;right:20px;z-index:100}
+.floating a{background:#25D366;color:#fff;width:55px;height:55px;
     border-radius:50%;display:flex;align-items:center;justify-content:center;
     text-decoration:none;font-size:24px;box-shadow:0 4px 15px rgba(37,211,102,0.4)}
 
   footer{text-align:center;padding:40px 20px;color:#666;border-top:1px solid #222;margin-top:70px}
 
   @media(min-width:769px){
-   .container{max-width:1000px}
-   .porto-grid{max-width:950px;margin:25px auto 0}
+  .container{max-width:1000px}
+  .porto-grid{max-width:950px;margin:25px auto 0}
   }
 
   @media(max-width:768px){
-   .nav-links{display:none}
-   .porto-grid{grid-template-columns:1fr;gap:25px}
-   .hero h1{font-size:2.5rem}
-   .typed-text{font-size:1.2rem}
-   .contact-icons{gap:22px}
-   .contact-icons a{font-size:1.9rem}
+  .nav-links{display:none}
+  .porto-grid{grid-template-columns:1fr;gap:25px}
+  .hero h1{font-size:2.5rem}
+  .typed-text{font-size:1.2rem}
+  .contact-icons{gap:22px}
+  .contact-icons a{font-size:1.9rem}
     h2{font-size:1.9rem;margin:55px 0 20px}
   }
 </style>
@@ -135,10 +135,10 @@
   <div class="nav-container">
     <div class="nav-logo">Sdeve</div>
     <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#les">Private Lesson</a>
-      <a href="#porto">Portfolio</a>
-      <a href="#contact">Contact</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#les">Les Private</a>
+      <a href="#porto">Portofolio</a>
+      <a href="#kontak">Kontak</a>
     </div>
   </div>
 </nav>
@@ -146,23 +146,23 @@
 <div class="hero">
   <h1 data-aos="fade-down">Sdeve</h1>
   <div class="typed-text" id="typed"></div>
-  <p data-aos="fade-up" data-aos-delay="200">Fullstack Developer | Based in Tulungagung</p>
+  <p data-aos="fade-up" data-aos-delay="200">Developer Fullstack | Berbasis di Tulungagung</p>
 
   <a href="https://wa.me/62895351432524" class="btn" data-aos="zoom-in" data-aos-delay="400">
-    <i class="fab fa-whatsapp"></i> Contact Me
+    <i class="fab fa-whatsapp"></i> Hubungi Saya
   </a>
 </div>
 
 <div class="container">
-  <section id="about">
-    <h2 data-aos="fade-right">About Me
-      <button class="tts-btn" onclick="speakText('about')" title="Listen">
+  <section id="tentang">
+    <h2 data-aos="fade-right">Tentang Saya
+      <button class="tts-btn" onclick="speakText('tentang')" title="Dengarkan">
         <i class="fas fa-volume-high"></i>
       </button>
     </h2>
     <div class="card" data-aos="fade-up">
-      <p>Freelance developer focused on building fast, responsive, and modern websites and applications.
-      Experienced in Laravel, React, Next.js, Golang, and Security Tools. Open for freelance projects and private programming lessons.</p>
+      <p>Developer freelance yang fokus membuat website dan aplikasi yang cepat, responsif, dan modern.
+      Berpengalaman di Laravel, React, Next.js, Golang, dan Security Tools. Terbuka untuk project freelance dan les private programming.</p>
       <div style="margin-top:15px">
         <span class="tag">Laravel</span>
         <span class="tag">React</span>
@@ -176,85 +176,85 @@
   </section>
 
   <section id="les">
-    <h2 data-aos="fade-right">Private Lesson
-      <button class="tts-btn" onclick="speakText('les')" title="Listen">
+    <h2 data-aos="fade-right">Les Private
+      <button class="tts-btn" onclick="speakText('les')" title="Dengarkan">
         <i class="fas fa-volume-high"></i>
       </button>
     </h2>
     <div class="card" data-aos="fade-up">
-      <h3><i class="fas fa-laptop-code"></i> Private Programming Lesson</h3>
-      <p>Location: Bascampe Tulungagung</p>
-      <p>Materials: Web Development, Laravel, JavaScript, Database, Git, Security Basics. Suitable for beginners to those who want to upgrade skills.</p>
-      <a href="https://wa.me/62895351432524?text=Hi+mas,+I+want+to+join+private+lesson" class="btn-small">Register Now</a>
+      <h3><i class="fas fa-laptop-code"></i> Les Private Programming</h3>
+      <p>Lokasi: Bascampe Tulungagung</p>
+      <p>Materi: Web Development, Laravel, JavaScript, Database, Git, Dasar Keamanan. Cocok untuk pemula sampai yang ingin upgrade skill.</p>
+      <a href="https://wa.me/62895351432524?text=Halo+mas,+mau+daftar+les+private" class="btn-small">Daftar Sekarang</a>
     </div>
   </section>
 
   <section id="porto">
-    <h2 data-aos="fade-right">Project Portfolio
-      <button class="tts-btn" onclick="speakText('porto')" title="Listen">
+    <h2 data-aos="fade-right">Portofolio Project
+      <button class="tts-btn" onclick="speakText('porto')" title="Dengarkan">
         <i class="fas fa-volume-high"></i>
       </button>
     </h2>
     <div class="porto-grid">
 
       <div class="porto-col" data-aos="fade-up">
-        <h3><i class="fas fa-cash-register"></i> Applications & Web App</h3>
+        <h3><i class="fas fa-cash-register"></i> Aplikasi & Web App</h3>
 
         <div class="card">
           <h4>Olshop Store Fullstack</h4>
-          <p>Fullstack e-commerce system with separate admin panel. Laravel + React.</p>
-          <a href="https://semb-commits.github.io/Olshop-Store/" target="_blank" class="btn-small">Live Demo</a>
+          <p>Sistem e-commerce fullstack dengan panel admin terpisah. Dibuat dengan Laravel + React.</p>
+          <a href="https://semb-commits.github.io/Olshop-Store/" target="_blank" class="btn-small">Lihat Demo</a>
           <a href="https://github.com/semb-commits/Olshop-Store" target="_blank" class="btn-small" style="background:#333">GitHub</a>
         </div>
 
         <div class="card">
           <h4>Kasir Toko Semb</h4>
-          <p>Web-based cashier app for stores. Simple, fast, and mobile friendly.</p>
-          <a href="https://linles263-sudo.github.io/Kasir-toko-semb/" target="_blank" class="btn-small">Live Demo</a>
+          <p>Aplikasi kasir toko berbasis web. Sederhana, cepat, dan mobile friendly.</p>
+          <a href="https://linles263-sudo.github.io/Kasir-toko-semb/" target="_blank" class="btn-small">Lihat Demo</a>
           <a href="https://github.com/linles263-sudo/Kasir-toko-semb" target="_blank" class="btn-small" style="background:#333">GitHub</a>
         </div>
 
         <div class="card">
-          <h4>Digital Invitation</h4>
-          <p>Interactive wedding invitation website. Responsive, smooth animations, RSVP included.</p>
-          <a href="https://semb-commits.github.io/Undangan-pernikahan2/" target="_blank" class="btn-small">Live Demo</a>
+          <h4>Undangan Digital</h4>
+          <p>Website undangan pernikahan interaktif. Responsive, animasi halus, ada fitur RSVP.</p>
+          <a href="https://semb-commits.github.io/Undangan-pernikahan2/" target="_blank" class="btn-small">Lihat Demo</a>
           <a href="https://github.com/semb-commits/Undangan-pernikahan2" target="_blank" class="btn-small" style="background:#333">GitHub</a>
         </div>
       </div>
 
       <div class="porto-col" data-aos="fade-up" data-aos-delay="150">
-        <h3><i class="fas fa-shield-alt"></i> Security Tools</h3>
+        <h3><i class="fas fa-shield-alt"></i> Tools Keamanan</h3>
 
         <div class="card">
           <h4>hydra-auto-runner</h4>
-          <p>Bash script to run Hydra faster. For authorized security testing only.</p>
+          <p>Script bash untuk menjalankan Hydra lebih cepat. Untuk testing keamanan yang legal saja.</p>
           <a href="https://github.com/semb-commits/hydra-auto-runner" target="_blank" class="btn-small">GitHub</a>
         </div>
 
         <div class="card">
           <h4>termux-osint-tool</h4>
-          <p>OSINT tool for Termux. PhoneIntel, Metagrab, Emailscan. Built with Python.</p>
+          <p>Tool OSINT untuk Termux. PhoneIntel, Metagrab, Emailscan. Dibuat dengan Python.</p>
           <a href="https://github.com/semb-commits/termux-osint-tool" target="_blank" class="btn-small">GitHub</a>
         </div>
 
         <div class="card">
           <h4>core-net-lite</h4>
-          <p>SQLite database simulation for core network education.</p>
+          <p>Simulasi database core network menggunakan SQLite untuk edukasi.</p>
           <a href="https://github.com/semb-commits/core-net-lite" target="_blank" class="btn-small">GitHub</a>
         </div>
 
         <div class="card">
           <h4>webcheck-tool</h4>
-          <p>Tool to quickly check and analyze websites. Check headers, tech stack.</p>
+          <p>Tool untuk mengecek dan menganalisis website dengan cepat. Cek headers, tech stack.</p>
           <a href="https://github.com/semb-commits/webcheck-tool" target="_blank" class="btn-small">GitHub</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2 data-aos="fade-right">Contact
-      <button class="tts-btn" onclick="speakText('contact')" title="Listen">
+  <section id="kontak">
+    <h2 data-aos="fade-right">Kontak
+      <button class="tts-btn" onclick="speakText('kontak')" title="Dengarkan">
         <i class="fas fa-volume-high"></i>
       </button>
     </h2>
@@ -285,7 +285,7 @@
 </div>
 
 <footer>
-  <p>© 2026 Sdeve. Built with passion.</p>
+  <p>© 2026 Sdeve. Dibuat dengan semangat.</p>
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -294,33 +294,43 @@
   AOS.init({duration:800,once:true});
 
   new Typed('#typed',{
-    strings:['Fullstack Developer','Laravel Specialist','React & Next.js','Security Tools Creator','Freelancer'],
+    strings:['Developer Fullstack','Spesialis Laravel','React & Next.js','Pembuat Tools Keamanan','Freelancer'],
     typeSpeed:80,backSpeed:50,loop:true,backDelay:1500
   });
 
-  // Teks Indo buat TTS
   const texts = {
-    about: "Saya freelance developer yang fokus bikin website dan aplikasi cepat, responsif, dan modern. Berpengalaman di Laravel, React, Next.js, Golang, dan Security Tools. Terbuka untuk project freelance dan les private programming.",
+    tentang: "Saya developer freelance yang fokus membuat website dan aplikasi yang cepat, responsif, dan modern. Berpengalaman di Laravel, React, Next.js, Golang, dan Security Tools. Terbuka untuk project freelance dan les private programming.",
 
-    les: "Saya menyediakan les private programming di Bascampe Tulungagung. Materi yang diajarkan meliputi Web Development, Laravel, JavaScript, Database, Git, dan Dasar Keamanan. Cocok untuk pemula sampai yang mau upgrade skill.",
+    les: "Saya menyediakan les private programming di Bascampe Tulungagung. Materi yang diajarkan meliputi Web Development, Laravel, JavaScript, Database, Git, dan Dasar Keamanan. Cocok untuk pemula sampai yang ingin upgrade skill.",
 
-    porto: "Ini adalah portofolio project saya. Ada aplikasi kasir web, toko online fullstack, undangan digital interaktif, dan berbagai tools security seperti hydra auto runner, termux osint tool, dan webcheck tool.",
+    porto: "Ini adalah portofolio project saya. Ada aplikasi kasir web, toko online fullstack, undangan digital interaktif, dan berbagai tools keamanan seperti hydra auto runner, termux osint tool, dan webcheck tool.",
 
-    contact: "Kamu bisa menghubungi saya melalui WhatsApp, Email di sembsui@gmail.com, atau cek project saya di GitHub. Lokasi saya di Bascampe Tulungagung."
+    kontak: "Kamu bisa menghubungi saya melalui WhatsApp, Email di sembsui@gmail.com, atau cek project saya di GitHub. Lokasi saya di Bascampe Tulungagung."
   };
 
   let currentUtterance = null;
   let currentButton = null;
+  let voicesLoaded = false;
+  let indoVoice = null;
+
+  function loadVoices(){
+    const voices = speechSynthesis.getVoices();
+    indoVoice = voices.find(voice => voice.lang === 'id-ID' || voice.lang === 'id_ID');
+    voicesLoaded = true;
+  }
+
+  if('speechSynthesis' in window){
+    speechSynthesis.onvoiceschanged = loadVoices;
+    loadVoices();
+  }
 
   function speakText(section){
-    // Stop kalau lagi ngomong
     if(currentUtterance){
       speechSynthesis.cancel();
       if(currentButton) currentButton.classList.remove('playing');
       currentUtterance = null;
       currentButton = null;
 
-      // Kalau tombol yang sama diklik lagi, berhenti aja
       if(event.target.closest('.tts-btn') === currentButton){
         return;
       }
@@ -331,7 +341,14 @@
 
     if('speechSynthesis' in window){
       currentUtterance = new SpeechSynthesisUtterance(text);
-      currentUtterance.lang = 'id-ID';
+
+      if(indoVoice){
+        currentUtterance.voice = indoVoice;
+        currentUtterance.lang = indoVoice.lang;
+      }else{
+        currentUtterance.lang = 'id-ID';
+      }
+
       currentUtterance.rate = 0.95;
 
       currentButton = button;
@@ -345,7 +362,7 @@
 
       speechSynthesis.speak(currentUtterance);
     }else{
-      alert('Browser kamu ga support Text-to-Speech');
+      alert('Browser kamu tidak mendukung Text-to-Speech');
     }
   }
 </script>
