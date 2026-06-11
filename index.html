@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sdeve - Portfolio</title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+  body{background:#0a0a0f;color:#fff;overflow-x:hidden}
+  .container{max-width:1100px;margin:auto;padding:40px 20px}
+  
+  .hero{
+    text-align:center;padding:120px 20px;min-height:85vh;
+    display:flex;flex-direction:column;justify-content:center;align-items:center
+  }
+  .hero h1{font-size:3.5rem;background:linear-gradient(90deg,#7c3aed,#06b6d4);
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:15px}
+  .hero p{color:#aaa;margin:10px 0 25px;font-size:1.1rem}
+  
+  .typed-text{font-size:1.6rem;color:#06b6d4;margin:15px 0 30px;height:40px}
+  .typed-cursor{color:#7c3aed;font-weight:bold}
+  
+  .btn{display:inline-block;padding:14px 32px;
+    background:linear-gradient(90deg,#7c3aed,#06b6d4);
+    border-radius:12px;color:#fff;text-decoration:none;font-weight:600;
+    transition:0.3s;margin:5px}
+  .btn:hover{transform:scale(1.05);box-shadow:0 0 20px #7c3aed}
+  
+  .social-links{margin:25px 0}
+  .social-links a{
+    color:#aaa;margin:0 12px;font-size:1.5rem;transition:0.3s
+  }
+  .social-links a:hover{color:#06b6d4}
+  
+  .card{background:#15151d;border:1px solid #222;padding:25px;
+    border-radius:16px;margin:20px 0;transition:0.3s}
+  .card:hover{border-color:#7c3aed;box-shadow:0 0 15px rgba(124,58,237,0.3)}
+  .card h3,.card h4{margin-bottom:12px;color:#a78bfa}
+  .card p{color:#bbb;line-height:1.6}
+  
+  h2{margin:80px 0 30px;font-size:2.2rem;background:linear-gradient(90deg,#7c3aed,#06b6d4);
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  
+  .porto-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    margin-top:30px
+  }
+  .porto-col h3{
+    margin-bottom:20px;
+    color:#06b6d4;
+    font-size:1.4rem
+  }
+  
+  .btn-small{
+    display:inline-block;
+    padding:8px 18px;
+    background:#7c3aed;
+    border-radius:8px;
+    color:#fff;
+    text-decoration:none;
+    font-size:0.9rem;
+    margin-top:12px;
+    transition:0.2s
+  }
+  .btn-small:hover{
+    background:#06b6d4;
+    transform:translateY(-2px)
+  }
+  
+  .floating{position:fixed;bottom:20px;right:20px;z-index:100}
+  .floating a{background:#25D366;color:#fff;width:55px;height:55px;
+    border-radius:50%;display:flex;align-items:center;justify-content:center;
+    text-decoration:none;font-size:24px;box-shadow:0 4px 15px rgba(37,211,102,0.4)}
+  
+  .tag{display:inline-block;background:#1e1e2a;padding:6px 12px;border-radius:20px;
+    font-size:0.85rem;margin:4px;color:#a78bfa}
+  
+  footer{text-align:center;padding:40px 20px;color:#666;border-top:1px solid #222;margin-top:80px}
+  
+  @media(max-width:768px){
+    .porto-grid{grid-template-columns:1fr}
+    .hero h1{font-size:2.5rem}
+    .typed-text{font-size:1.2rem}
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1 data-aos="fade-down">Sdeve</h1>
+  <div class="typed-text" id="typed"></div>
+  <p data-aos="fade-up" data-aos-delay="200">Fullstack Developer | Based in Tulungagung</p>
+  
+  <div class="social-links" data-aos="fade-up" data-aos-delay="300">
+    <a href="https://github.com/semb-commits" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61587359215407" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://wa.me/62895351432524" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
+  
+  <a href="https://wa.me/62895351432524" class="btn" data-aos="zoom-in" data-aos-delay="400">
+    <i class="fab fa-whatsapp"></i> Hubungi Saya
+  </a>
+</div>
+
+<div class="container">
+  <h2 data-aos="fade-right">Tentang Saya</h2>
+  <div class="card" data-aos="fade-up">
+    <p>Freelance developer yang fokus bikin website dan aplikasi cepat, responsif, dan modern. 
+    Berpengalaman di Laravel, React, Next.js, dan Golang. Terbuka untuk project freelance dan les private programming.</p>
+    <div style="margin-top:15px">
+      <span class="tag">Laravel</span>
+      <span class="tag">React</span>
+      <span class="tag">Next.js</span>
+      <span class="tag">Golang</span>
+      <span class="tag">Python</span>
+      <span class="tag">MySQL</span>
+    </div>
+  </div>
+
+  <h2 data-aos="fade-right">Les Private</h2>
+  <div class="card" data-aos="fade-up">
+    <h3><i class="fas fa-laptop-code"></i> Les Private Programming</h3>
+    <p>Lokasi: Bascampe Tulungagung</p>
+    <p>Materi: Web Development, Laravel, JavaScript, Database, Git. Cocok buat pemula sampai yang mau upgrade skill.</p>
+    <a href="https://wa.me/62895351432524?text=Halo+mas,+mau+daftar+les+private" class="btn-small">Daftar Sekarang</a>
+  </div>
+
+  <h2 data-aos="fade-right">Project Portfolio</h2>
+  <div class="porto-grid">
+    
+    <!-- KOLOM KIRI: Project Kasir & Web App -->
+    <div class="porto-col" data-aos="fade-up">
+      <h3><i class="fas fa-cash-register"></i> Aplikasi Kasir & Web App</h3>
+      
+      <div class="card">
+        <h4>Olshop Store Fullstack</h4>
+        <p>Sistem e-commerce fullstack dengan panel admin terpisah. Laravel + React. 
+        Fitur: CRUD produk, order via WA, manajemen stok.</p>
+        <a href="https://semb-commits.github.io/Olshop-Store/" target="_blank" class="btn-small">Lihat Demo</a>
+        <a href="https://github.com/semb-commits" target="_blank" class="btn-small" style="background:#333">GitHub</a>
+      </div>
+
+      <div class="card">
+        <h4>Undangan Digital</h4>
+        <p>Website undangan pernikahan interaktif. Responsive, animasi smooth, ada RSVP dan galeri foto.</p>
+        <a href="https://semb-commits.github.io/Undangan-pernikahan2/" target="_blank" class="btn-small">Lihat Demo</a>
+        <a href="https://github.com/semb-commits" target="_blank" class="btn-small" style="background:#333">GitHub</a>
+      </div>
+    </div>
+
+    <!-- KOLOM KAN: Tools -->
+    <div class="porto-col" data-aos="fade-up" data-aos-delay="150">
+      <h3><i class="fas fa-tools"></i> Tools & Security</h3>
+      
+      <div class="card">
+        <h4>termux-osint-tool</h4>
+        <p>OSINT tool untuk Termux. PhoneIntel, Metagrab, Emailscan. Dibuat dengan Python.</p>
+        <a href="https://github.com/semb-commits/termux-osint-tool" target="_blank" class="btn-small">GitHub</a>
+      </div>
+
+      <div class="card">
+        <h4>core-net-lite</h4>
+        <p>Simulasi SQLite database core network untuk edukasi. Subscriber, cell, session management.</p>
+        <a href="https://github.com/semb-commits/core-net-lite" target="_blank" class="btn-small">GitHub</a>
+      </div>
+
+      <div class="card">
+        <h4>hydra-auto-runner</h4>
+        <p>Bash script untuk menjalankan Hydra lebih cepat. Untuk authorized security testing only.</p>
+        <a href="https://github.com/semb-commits/hydra-auto-runner" target="_blank" class="btn-small">GitHub</a>
+      </div>
+
+      <div class="card">
+        <h4>portsweep</h4>
+        <p>Fast port scanner CLI untuk Termux menggunakan Python sockets.</p>
+        <a href="https://github.com/semb-commits/portsweep" target="_blank" class="btn-small">GitHub</a>
+      </div>
+
+      <div class="card">
+        <h4>header-hunter</h4>
+        <p>CLI tool untuk grab HTTP headers dan tech stack dari website mana saja.</p>
+        <a href="https://github.com/semb-commits/header-hunter" target="_blank" class="btn-small">GitHub</a>
+      </div>
+
+      <div class="card">
+        <h4>webcheck-tool</h4>
+        <p>Tool untuk cek dan analisis website secara cepat.</p>
+        <a href="https://github.com/semb-commits/webcheck-tool" target="_blank" class="btn-small">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <h2 data-aos="fade-right">Kontak</h2>
+  <div class="card" data-aos="fade-up">
+    <p><i class="fas fa-map-marker-alt"></i> Bascampe, Tulungagung</p>
+    <p><i class="fab fa-whatsapp"></i> 0895-3514-32524</p>
+    <p><i class="fab fa-github"></i> github.com/semb-commits</p>
+    <p><i class="fab fa-facebook"></i> facebook.com/profile.php?id=61587359215407</p>
+  </div>
+</div>
+
+<div class="floating">
+  <a href="https://wa.me/62895351432524"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+<footer>
+  <p>© 2026 Sdeve. Built with passion.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+
+  new Typed('#typed', {
+    strings: ['Fullstack Developer', 'Laravel Specialist', 'React & Next.js', 'Security Tools Creator', 'Freelancer'],
+    typeSpeed: 80,
+    backSpeed: 50,
+    loop: true,
+    backDelay: 1500
+  });
+</script>
+
+</body>
+  </html>
