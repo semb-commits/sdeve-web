@@ -28,12 +28,6 @@
     transition:0.3s;margin:5px}
   .btn:hover{transform:scale(1.05);box-shadow:0 0 20px #7c3aed}
   
-  .social-links{margin:25px 0}
-  .social-links a{
-    color:#aaa;margin:0 12px;font-size:1.5rem;transition:0.3s
-  }
-  .social-links a:hover{color:#06b6d4}
-  
   .card{background:#15151d;border:1px solid #222;padding:25px;
     border-radius:16px;margin:20px 0;transition:0.3s}
   .card:hover{border-color:#7c3aed;box-shadow:0 0 15px rgba(124,58,237,0.3)}
@@ -79,12 +73,35 @@
   .tag{display:inline-block;background:#1e1e2a;padding:6px 12px;border-radius:20px;
     font-size:0.85rem;margin:4px;color:#a78bfa}
   
+  .contact-card{
+    text-align:center;
+    padding:35px 20px
+  }
+  .contact-icons{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap
+  }
+  .contact-icons a{
+    color:#aaa;
+    font-size:2.3rem;
+    transition:0.3s;
+    display:inline-block
+  }
+  .contact-icons a:hover{
+    color:#06b6d4;
+    transform:translateY(-5px) scale(1.1)
+  }
+  
   footer{text-align:center;padding:40px 20px;color:#666;border-top:1px solid #222;margin-top:80px}
   
   @media(max-width:768px){
     .porto-grid{grid-template-columns:1fr}
     .hero h1{font-size:2.5rem}
     .typed-text{font-size:1.2rem}
+    .contact-icons{gap:25px}
+    .contact-icons a{font-size:2rem}
   }
 </style>
 </head>
@@ -95,12 +112,6 @@
   <div class="typed-text" id="typed"></div>
   <p data-aos="fade-up" data-aos-delay="200">Fullstack Developer | Based in Tulungagung</p>
   
-  <div class="social-links" data-aos="fade-up" data-aos-delay="300">
-    <a href="https://github.com/semb-commits" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=61587359215407" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://wa.me/62895351432524" target="_blank"><i class="fab fa-whatsapp"></i></a>
-  </div>
-  
   <a href="https://wa.me/62895351432524" class="btn" data-aos="zoom-in" data-aos-delay="400">
     <i class="fab fa-whatsapp"></i> Hubungi Saya
   </a>
@@ -110,7 +121,7 @@
   <h2 data-aos="fade-right">Tentang Saya</h2>
   <div class="card" data-aos="fade-up">
     <p>Freelance developer yang fokus bikin website dan aplikasi cepat, responsif, dan modern. 
-    Berpengalaman di Laravel, React, Next.js, dan Golang. Terbuka untuk project freelance dan les private programming.</p>
+    Berpengalaman di Laravel, React, Next.js, Golang, dan Security Tools. Terbuka untuk project freelance dan les private programming.</p>
     <div style="margin-top:15px">
       <span class="tag">Laravel</span>
       <span class="tag">React</span>
@@ -118,6 +129,7 @@
       <span class="tag">Golang</span>
       <span class="tag">Python</span>
       <span class="tag">MySQL</span>
+      <span class="tag">Cybersecurity</span>
     </div>
   </div>
 
@@ -125,7 +137,7 @@
   <div class="card" data-aos="fade-up">
     <h3><i class="fas fa-laptop-code"></i> Les Private Programming</h3>
     <p>Lokasi: Bascampe Tulungagung</p>
-    <p>Materi: Web Development, Laravel, JavaScript, Database, Git. Cocok buat pemula sampai yang mau upgrade skill.</p>
+    <p>Materi: Web Development, Laravel, JavaScript, Database, Git, Security Basics. Cocok buat pemula sampai yang mau upgrade skill.</p>
     <a href="https://wa.me/62895351432524?text=Halo+mas,+mau+daftar+les+private" class="btn-small">Daftar Sekarang</a>
   </div>
 
@@ -134,7 +146,7 @@
     
     <!-- KOLOM KIRI: Project Kasir & Web App -->
     <div class="porto-col" data-aos="fade-up">
-      <h3><i class="fas fa-cash-register"></i> Aplikasi Kasir & Web App</h3>
+      <h3><i class="fas fa-cash-register"></i> Aplikasi & Web App</h3>
       
       <div class="card">
         <h4>Olshop Store Fullstack</h4>
@@ -150,12 +162,30 @@
         <a href="https://semb-commits.github.io/Undangan-pernikahan2/" target="_blank" class="btn-small">Lihat Demo</a>
         <a href="https://github.com/semb-commits" target="_blank" class="btn-small" style="background:#333">GitHub</a>
       </div>
+
+      <div class="card">
+        <h4>Kasir POS Offline</h4>
+        <p>Aplikasi kasir desktop pakai Electron + MySQL. Ada laporan penjualan, stok, print struk.</p>
+        <a href="#" class="btn-small">Lihat Detail</a>
+      </div>
     </div>
 
-    <!-- KOLOM KAN: Tools -->
+    <!-- KOLOM KAN: Tools Security -->
     <div class="porto-col" data-aos="fade-up" data-aos-delay="150">
-      <h3><i class="fas fa-tools"></i> Tools & Security</h3>
+      <h3><i class="fas fa-shield-alt"></i> Tools Security</h3>
       
+      <div class="card">
+        <h4>Anti-Phishing Tool</h4>
+        <p>Tool untuk deteksi dan analisis link phising. Cek URL, domain age, SSL, dan pattern berbahaya.</p>
+        <a href="https://github.com/semb-commits" target="_blank" class="btn-small">GitHub</a>
+      </div>
+
+      <div class="card">
+        <h4>Anti-Malware Scanner</h4>
+        <p>Scanner ringan untuk deteksi file mencurigakan di Android/Termux. Hash check + signature matching.</p>
+        <a href="https://github.com/semb-commits" target="_blank" class="btn-small">GitHub</a>
+      </div>
+
       <div class="card">
         <h4>termux-osint-tool</h4>
         <p>OSINT tool untuk Termux. PhoneIntel, Metagrab, Emailscan. Dibuat dengan Python.</p>
@@ -169,37 +199,32 @@
       </div>
 
       <div class="card">
-        <h4>hydra-auto-runner</h4>
-        <p>Bash script untuk menjalankan Hydra lebih cepat. Untuk authorized security testing only.</p>
-        <a href="https://github.com/semb-commits/hydra-auto-runner" target="_blank" class="btn-small">GitHub</a>
-      </div>
-
-      <div class="card">
-        <h4>portsweep</h4>
-        <p>Fast port scanner CLI untuk Termux menggunakan Python sockets.</p>
-        <a href="https://github.com/semb-commits/portsweep" target="_blank" class="btn-small">GitHub</a>
-      </div>
-
-      <div class="card">
-        <h4>header-hunter</h4>
-        <p>CLI tool untuk grab HTTP headers dan tech stack dari website mana saja.</p>
-        <a href="https://github.com/semb-commits/header-hunter" target="_blank" class="btn-small">GitHub</a>
-      </div>
-
-      <div class="card">
         <h4>webcheck-tool</h4>
-        <p>Tool untuk cek dan analisis website secara cepat.</p>
+        <p>Tool untuk cek dan analisis website secara cepat. Cek headers, tech stack, dan security headers.</p>
         <a href="https://github.com/semb-commits/webcheck-tool" target="_blank" class="btn-small">GitHub</a>
       </div>
     </div>
   </div>
 
   <h2 data-aos="fade-right">Kontak</h2>
-  <div class="card" data-aos="fade-up">
-    <p><i class="fas fa-map-marker-alt"></i> Bascampe, Tulungagung</p>
-    <p><i class="fab fa-whatsapp"></i> 0895-3514-32524</p>
-    <p><i class="fab fa-github"></i> github.com/semb-commits</p>
-    <p><i class="fab fa-facebook"></i> facebook.com/profile.php?id=61587359215407</p>
+  <div class="card contact-card" data-aos="fade-up">
+    <div class="contact-icons">
+      <a href="https://maps.app.goo.gl/J13NpSj4RVb861cz8" target="_blank" title="Bascampe Tulungagung">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+      <a href="https://wa.me/62895351432524" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="mailto:sembsui@gmail.com" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/semb-commits" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61587359215407" target="_blank" title="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
   </div>
 </div>
 
@@ -229,4 +254,4 @@
 </script>
 
 </body>
-  </html>
+                               </html>
